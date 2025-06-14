@@ -13,13 +13,13 @@ const Login = () => {
     Navigate('/dashboard');
   };
   return (
-    <div className="h-screen w- bg-white flex items-center justify-center ">
+    <div className="flex  justify-center items-center h-screen p-0.5">
       <form
         onSubmit={handleSumbit}
-        className="h-[60vh] w-[30vw] shadow-xl/20 bg-white p-3 flex justify-start flex-col "
+        className="h-[40vh] w-[90vw] shadow-xl/20 bg-white p-3 flex justify-start flex-col  sm:w-[90vw] md:w-[40vw] md:h-[50vh]"
         
       >
-        <h1 className="font-bold text-2xl text-center">DromKart</h1>
+        <h1 className="font-bold text-2xl text-center"> Welcome to DromKart</h1>
         <label className="block font-bold mb-3 mt-3">UserName:</label>
         <Input placehoder="username" type="text" />
 

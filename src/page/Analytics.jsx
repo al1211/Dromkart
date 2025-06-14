@@ -56,7 +56,7 @@ const Analytics = () => {
         ))}
 
         {show && (
-          <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4 min-w-[80vw]">
+          <div className="min-h-[60vh] bg-gray-100 flex items-center justify-center p-4 min-w-[80vw]  sm:min-w-[80vw]">
             <Charts />:
           </div>
         )}

@@ -12,7 +12,7 @@ const Dashboard = () => {
       {/* <Header /> */}
       <main className="p-6 space-y-6 bg-gray-100 min-h-screen">
         <Analytics />
-        <Message />
+        {/* <Message /> */}
         <Products />
         <Reports />
       </main>
