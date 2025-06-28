@@ -1,0 +1,4 @@
+#node moudles
+
+node_modules/
+.env

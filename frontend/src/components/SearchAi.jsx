@@ -1,11 +1,15 @@
 import React, { useState } from 'react'
-
+import {generateText} from "../../api/api"
 const SearchAi = () => {
     const [prompt,setPrompt]=useState("");
     const [response,setResponse]=useState("");
-    const handleSumbit=(e)=>{
+    const handleSumbit=async(e)=>{
+      e.preventDefault();
      
-    e.preventDefault();
+    try{
+     let result= await generateText(prompt);
+     console.log(result.data.reply);
+    }catch(err){console.log(err)}
     }
   return (
   <form  className='flex items-center justify-center' onSubmit={handleSumbit}>
