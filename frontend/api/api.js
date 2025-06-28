@@ -6,3 +6,4 @@ const API=axios.create({
 
 export const register=(data)=>API.post("/user/singup",data);
 export const loginUser=(data)=>API.post("/user/login",data);
+export const generateText=(prompt)=>API.post("/api/generate",prompt);
